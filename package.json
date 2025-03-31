@@ -1,0 +1,16 @@
+{
+  "name": "practica_html",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Actividad #01 HTML",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
