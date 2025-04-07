@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiquetas HTML</title>
+    <!-- Link to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Demostración de Etiquetas HTML</h1>
-        <nav>
-            <a href="index.html">Login</a> | 
-            <a href="tags.html">Etiquetas</a> | 
-            <a href="profile.html">Perfil</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Etiquetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
+    
+    <div class="container mt-5">
+        <h1>Demostración de Etiquetas HTML</h1>
+        <div class="mt-4">
+            <p><strong>Este es un párrafo</strong> donde puedes observar el uso de la etiqueta <code>&lt;p&gt;</code>.</p>
 
-    <div>
-        <p><strong>Este es un párrafo</strong> donde puedes observar el uso de la etiqueta <code>&lt;p&gt;</code>.</p>
+            <p>También puedes ver cómo se utilizan las etiquetas <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
 
-        <p>También puedes ver cómo se utilizan las etiquetas <sub>subíndice</sub> y <sup>superíndice</sup>.</p>
+            <p>Una imagen que demuestra el uso de <code>&lt;img&gt;</code>: </p>
+            <img src="../assets/monket.jpg" alt="Imagen de ejemplo" class="img-fluid mb-4">
 
-        <p>Una imagen que demuestra el uso de <code>&lt;img&gt;</code>: </p>
-        <img src="../assets/monket.jpg" alt="Imagen de ejemplo" width="1000" height="325">
-
-        <p>Además de <strong>negritas</strong> y <em>cursivas</em>.</p>
+            <p>Además de <strong>negritas</strong> y <em>cursivas</em>.</p>
+        </div>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

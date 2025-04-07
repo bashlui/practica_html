@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil</title>
+    <!-- Link to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Perfil de Usuario</h1>
-        <nav>
-            <a href="index.html">Login</a> | 
-            <a href="tags.html">Etiquetas</a> | 
-            <a href="profile.html">Perfil</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mi Sitio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tags.html">Etiquetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    <div>
-        <h2>Datos Personales</h2>
-        <p><strong>Nombre:</strong> Luis Antonio (Toño) Bolaina Domínguez</p>
-        <p><strong>Edad:</strong> 20 años</p>
-        <p><strong>Carrera:</strong> Ingeniería en Tecnologías Computacionales</p>
-        
-        <p>Mi foto:</p>
-        <img src="../assets/antonio.jpeg" alt="Mi foto de perfil" width="500" height="500">
-        <p>Descripción: Soy un estudiante apasionado por la tecnología y el desarrollo de software. Me gusta aprender cosas nuevas y enfrentar desafíos.</p>
+    
+    <div class="container mt-5">
+        <h1>Perfil de Usuario</h1>
+        <div class="mt-4">
+            <h2>Datos Personales</h2>
+            <p><strong>Nombre:</strong> Luis Antonio (Toño) Bolaina Domínguez</p>
+            <p><strong>Edad:</strong> 20 años</p>
+            <p><strong>Carrera:</strong> Ingeniería en Tecnologías Computacionales</p>
+            
+            <p>Mi foto:</p>
+            <img src="../assets/antonio.jpeg" alt="Mi foto de perfil" class="img-fluid mb-4" width="200" height="200">
+            <p>Descripción: Soy un estudiante apasionado por la tecnología y el desarrollo de software. Me gusta aprender cosas nuevas y enfrentar desafíos.</p>
+        </div>
     </div>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
