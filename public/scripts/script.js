@@ -2,11 +2,24 @@ const botton = document.getElementById("btnLogin");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 
-const login = () => {
-    console.log(username.value + " " + password.value);
+// Función para validar credenciales del usuario
+function validateLogin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-    sessionStorage.name = "Toño";
-    window.location = "./tags.html";
-};
+    // Valida las credenciales con datos de ejemplo
+    if (isValidUser(username, password)) {
+        alert("Login exitoso, redirigiendo...");
+        redirectToProfile(); // Redirige al perfil desde profile.js
+    } else {
+        alert("Error: Usuario o contraseña incorrectos.");
+    }
+}
 
-botton.addEventListener("click", login);    
+// Agregar evento al botón de login
+document.addEventListener("DOMContentLoaded", () => {
+    const loginButton = document.getElementById("btnLogin");
+    if (loginButton) {
+        loginButton.addEventListener("click", validateLogin);
+    }
+});
